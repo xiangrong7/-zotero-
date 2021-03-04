@@ -58,7 +58,7 @@
     <choose>
       <if variable="author">
         <names variable="author">
-          <name form="short" delimiter=" " and="symbol" et-al-min="3">
+          <name form="short" delimiter=" " and="text" et-al-min="3">
             <name-part name="family" text-case="capitalize-first"/>
           </name>
         </names>
@@ -72,7 +72,7 @@
     <choose>
       <if variable="author">
         <names variable="author">
-          <name delimiter="" and="text" et-al-min="3">
+          <name delimiter=" " and="text" et-al-min="3">
             <name-part name="family" text-case="capitalize-first"/>
           </name>
         </names>
@@ -275,7 +275,7 @@
     </layout>
     <layout prefix="(" suffix=")" delimiter="; ">
       <group delimiter=", ">
-        <text macro="author-intext-long"/>
+        <text macro="author-intext"/>
         <text macro="issue-date-year"/>
         <group>
           <label variable="locator" form="short"/>
