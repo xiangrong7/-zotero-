@@ -204,14 +204,6 @@
   <macro name="title">
     <text variable="title" text-case="title"/>
     <text variable="number" prefix=": "/>
-    <group delimiter="/" prefix="[" suffix="]">
-      <text macro="type-code"/>
-      <choose>
-        <if variable="URL">
-          <text value="OL"/>
-        </if>
-      </choose>
-    </group>
   </macro>
 
   <macro name="bib-full">
@@ -284,7 +276,7 @@
       </group>
     </layout>
   </citation>
-  <bibliography entry-spacing="0" et-al-min="4" et-al-use-first="3" line-spacing="1" hanging-indent="true">
+  <bibliography entry-spacing="0" et-al-min="4" et-al-use-first="3" line-spacing="1" hanging-indent="false">
     <sort>
       <key macro="author-intext"/>
       <key macro="issue-date-year" sort="ascending"/>
